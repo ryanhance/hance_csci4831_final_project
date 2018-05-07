@@ -6,6 +6,7 @@ Final Project - Two-Out Performance Percentage (TOPP%)
 This is the final project repository for Ryan Hance's CSCI 4831 - Sabermetrics class for Spring 2018.
 
 Website:  https://sites.google.com/a/colorado.edu/hance-csci-4831-final-project/
+Video explanation:  https://drive.google.com/file/d/1rxG9ygVFNQrfySyANm3gTZWrDkhWzrT0/view?usp=sharing
 
 Contents include:
 - Read_Me.txt			  				- This file
