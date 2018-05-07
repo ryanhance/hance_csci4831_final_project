@@ -84,5 +84,5 @@ inner join Score_Opp opp on s1.bat_id = opp.bat_id
 inner join OnBase ob on s1.bat_id = ob.bat_id
 inner join PlateApp pa on s1.bat_id = pa.bat_id
 inner join id i on s1.bat_id = i.id
-#where opp.scoreOpp >= 100
+where opp.scoreOpp >= 100
 order by TOPP desc;
