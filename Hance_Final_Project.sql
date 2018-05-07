@@ -71,8 +71,11 @@ CREATE TABLE PlateApp as
 		group by e.bat_id;
         
 # Join all the tables and calculate score
-select s1.bat_id, i.first, i.last, (1.5 * sb.scoreBat + 1.5 * s1.score1b + s2.score2b + s3.score3b 
-	+ .5 * ns.noScore) / opp.scoreOpp + ob.onBase / pa.plateApp as TOPP from Score_1B s1
+select s1.bat_id, i.first, i.last, sb.scoreBat as score_bat, s1.score1b as score_1b, s2.score2b as score_2b, 
+	s3.score3b as score_3b, ns.noScore as no_score, opp.scoreOpp as score_opp, (1.5 * sb.scoreBat + 1.5  
+    * s1.score1b + s2.score2b + s3.score3b + .5 * ns.noScore) / opp.scoreOpp as ATOR, ob.onBase / pa.plateApp as OBP,
+    (1.5 * sb.scoreBat + 1.5 * s1.score1b + s2.score2b + s3.score3b + .5 * ns.noScore) / opp.scoreOpp 
+    + ob.onBase / pa.plateApp as TOPP from Score_1B s1
 inner join Score_2B s2 on s1.bat_id = s2.bat_id
 inner join Score_3B s3 on s1.bat_id = s3.bat_id
 inner join Score_Bat sb on s1.bat_id = sb.bat_id
@@ -81,4 +84,5 @@ inner join Score_Opp opp on s1.bat_id = opp.bat_id
 inner join OnBase ob on s1.bat_id = ob.bat_id
 inner join PlateApp pa on s1.bat_id = pa.bat_id
 inner join id i on s1.bat_id = i.id
+#where opp.scoreOpp >= 100
 order by TOPP desc;
