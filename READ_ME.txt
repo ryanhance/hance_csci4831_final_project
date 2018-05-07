@@ -8,11 +8,11 @@ This is the final project repository for Ryan Hance's CSCI 4831 - Sabermetrics c
 Website:  https://sites.google.com/a/colorado.edu/hance-csci-4831-final-project/
 
 Contents include:
-- Read_Me.txt			  			- This file
-- Hance_Final_Project.sql 			- Code base used for this project
-- Hance_Final_Project_Lahman.sql 	- Code using Lahman database to obtain RBI and OBP data for comparison.
-- Hance_Final_Project.mp4 			- Video explanation of project
-- Hance_Final_Project.pdf 			- Project and statistic explanation and analysis
+- Read_Me.txt			  				- This file
+- Hance_Final_Project.sql 				- Code base used for this project
+- Hance_Final_Project_Lahman.sql 		- Code using Lahman database to obtain RBI and OBP data for comparison.
+- Hance_Final_Project_Video_Link.txt	- Link to video explanation of project (Video too large to upload to GitHub)
+- Hance_Final_Project.pdf 				- Project and statistic explanation and analysis
 
 Explanation of statistic:
 
